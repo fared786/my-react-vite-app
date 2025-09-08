@@ -1,0 +1,21 @@
+html, body { 
+    min-height: 100%; 
+}
+.sticky-top.blur-on-scroll { 
+    backdrop-filter: saturate(180%) blur(8px); 
+}
+#scrollTopBtn {
+    position: fixed; bottom: 24px; right: 24px;
+    display: none; z-index: 1030;
+}
+
+.product-card-img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+.view-switch .btn { 
+    min-width: 3rem; 
+}
+.qty-btn { 
+    min-width: 2.25rem; 
+}
