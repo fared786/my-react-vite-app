@@ -43,23 +43,20 @@ export default function About() {
 
         {/* Work Distribution & Roles — 1–3 paragraphs */}
         <section className="mt-4">
-          <h2 className="h5">Work Distribution and Roles</h2>
+          <h2 className="h5">Work Process and my Role</h2>
           <p>
-            We began by decomposing the assignment into user-facing flows (storefront, registration/login, cart/checkout)
+            I began by decomposing this project into user-facing flows (storefront, registration/login, cart/checkout)
             and operational tooling (admin product management). This allowed parallel work with clear boundaries and a
             shared design language (Bootstrap components, utility classes, and form patterns). We agreed on a single
             data model for products and a canonical user shape (<code>{'{ name, email, phone, password }'}</code>) to
             minimise integration friction between pages.
           </p>
+     
           <p>
-            Roles were assigned to align with each member’s strengths while ensuring cross-review: {
-              MEMBERS.map((m, i) => (
-                <span key={m.sid}><strong>{m.name}</strong> ({m.sid}) — {m.role}{i < MEMBERS.length - 1 ? '; ' : '.'}</span>
-              ))
-            } This division let us ship features iteratively: the Admin panel seeded and edited products (including a
+            My role was to ship features iteratively: the Admin panel seeded and edited products (including a
             “Featured” flag), which the Home and Products pages consumed immediately; meanwhile, the Register/Dashboard
             flow established validation, accessibility, and feedback patterns that we reused across forms.
-          </p>
+          </p> 
         </section>
 
         {/* Project Highlights — 1–3 paragraphs */}
@@ -98,33 +95,6 @@ export default function About() {
           </p>
         </section>
 
-        {/* Group Members (names & student IDs) */}
-        <section className="mt-4">
-          <h2 className="h5">Group Members</h2>
-          <div className="table-responsive">
-            <table className="table align-middle">
-              <thead>
-                <tr>
-                  <th style={{width:'40%'}}>Name</th>
-                  <th style={{width:'25%'}}>Student ID</th>
-                  <th>Primary Responsibilities</th>
-                </tr>
-              </thead>
-              <tbody>
-                {MEMBERS.map(m => (
-                  <tr key={m.sid}>
-                    <td>{m.name}</td>
-                    <td><code>{m.sid}</code></td>
-                    <td>{m.role}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="text-muted small mb-0">
-            Note: All members participated in code reviews, accessibility checks, and documentation.
-          </p>
-        </section>
 
         {/* References (assets used) */}
         <section className="mt-4">
